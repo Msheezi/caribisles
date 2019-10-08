@@ -25,6 +25,7 @@ export const Navbar = props => {
   return (
     <Nav>
       <MySpan>CaribIsles.com</MySpan>
+        
     </Nav>
   );
 };
