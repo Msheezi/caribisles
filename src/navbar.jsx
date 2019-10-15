@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Nav = styled.div`
   width: 100%;
   height: 50px;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 1;
   text-align: center;
-  border: 1px solid black;
-  box-shadow: 2px 2px #edeaea;
+  // border: 1px solid black;
+  // box-shadow: 1px 1px #454343;
   padding-top: 10px;
   position: fixed;
   top: 0;
@@ -18,8 +18,19 @@ const Nav = styled.div`
 const MySpan = styled.span`
   vertical-align: center;
   font-family: "Lobster", cursive;
-  font-size: 16pt;
+  font-size: 25pt;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 `;
+
+
+
+
+
 
 export const Navbar = props => {
   return (

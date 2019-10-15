@@ -37,6 +37,17 @@ const Panel = styled.div`
   transition: max-height 0.2s ease-out;
 
 `
+const SidebarText = styled.span`
+font-family: "Lobster", cursive;
+  font-size: 18pt;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000;
+    margin-left: 10px;
+`
 
 
 
@@ -47,10 +58,10 @@ export const Sidebar = props => {
   let resortsArray = Object.keys(resorts).map(id => resorts[id])
   let details = islandsArray.map(island => (
     <div>
-        <h3>{island.name}</h3>
+        <SidebarText key={island.id}>{island.name}</SidebarText>
         <ul>
           {resortsArray.map(resort => (
-            resort.islandId === island.id ? <li>{resort.name}</li> : ""
+            resort.islandId === island.id ? <li key={resort.id}>{resort.name}</li> : ""
           ))}
         </ul>
     </div>
