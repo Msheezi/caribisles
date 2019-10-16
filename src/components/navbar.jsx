@@ -51,9 +51,11 @@ align-content: center;
 
 const ButtonNav = styled.div`
 
-padding: 5px;
+padding: 10px;
 border-left: 1px solid black;
-border-right: 1px solid black;
+cursor:pointer;
+
+// border-right: 1px solid black;
 vertical-align: center;
 text-align: center;
 &:hover {
@@ -80,7 +82,7 @@ export const Navbar = props => {
         
         <ButtonNav>Specials</ButtonNav>
         <ButtonNav>About CaribIsles</ButtonNav>
-        <ButtonNav>Contact Us</ButtonNav>
+        <ButtonNav style={{ borderRight: "1px solid black"}}>Contact Us</ButtonNav>
         
 
       </NavButtons>

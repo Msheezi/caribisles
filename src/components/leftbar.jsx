@@ -7,13 +7,15 @@ const SidebarContainer = styled.div`
 margin-top: 10px;
 width: 15%;
 border 0.5px solid black;
-height: 80vh;
-margin-left: 0px;
+height: 60vh;
+margin-left: 10px;
 border-radius: 3px;
-position: fixed;
-top: 65px;
-left: 0;
-margin-left: 5px;
+// position: fixed;
+// top: 165px;
+// left: 0px;
+// right: 10px;
+padding: 5px;
+
 `;
 
 const Accordian = styled.div`

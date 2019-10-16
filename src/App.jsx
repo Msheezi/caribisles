@@ -1,14 +1,17 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import { Navbar } from "./navbar";
-import { Sidebar } from "./leftbar";
+import { Navbar } from "./components/navbar";
+import { Sidebar } from "./components/leftbar";
 import styled from 'styled-components'
 
 const MainContent = styled.div`
-background: transparent;
+
 width: 100%;
 height: 100%;
+margin-top: 150px;
+display: flex;
+
 `
 
 function App() {
@@ -28,12 +31,15 @@ function App() {
     //       Learn React
     //     </a>
     //   </header>
-    <MainContent>
+    <div>
+    <Navbar></Navbar>
 
-      <Navbar></Navbar>
-      <Sidebar></Sidebar>
+      <MainContent>
 
-    </MainContent>
+        <Sidebar></Sidebar>
+
+      </MainContent>
+    </div>
 
     
    
