@@ -3,6 +3,13 @@ import React from "react";
 import "./App.css";
 import { Navbar } from "./navbar";
 import { Sidebar } from "./leftbar";
+import styled from 'styled-components'
+
+const MainContent = styled.div`
+background: transparent;
+width: 100%;
+height: 100%;
+`
 
 function App() {
   return (
@@ -21,11 +28,16 @@ function App() {
     //       Learn React
     //     </a>
     //   </header>
-    <div style={{ height: 2000 }}>
+    <MainContent>
+
       <Navbar></Navbar>
       <Sidebar></Sidebar>
-    </div>
-  );
+
+    </MainContent>
+
+    
+   
+  )
 }
 
 export default App;
