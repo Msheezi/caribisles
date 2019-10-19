@@ -17,6 +17,7 @@ border-radius: 3px;
 padding: 5px;
 overflow-y: auto;
 
+
 `;
 
 const Accordian = styled.div`
@@ -46,11 +47,20 @@ font-family: "Lobster", cursive;
   color: white;
   letter-spacing: 3px;
   margin: 2px 5px;
+  cursor: pointer;
   text-shadow: -1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
     1px 1px 0 #000;
     margin-left: 10px;
+`
+
+const TitleTest = styled.div`
+font-family: "Lobster", cursive;
+  font-size: 16pt;
+   letter-spacing: 3px;
+  margin: 2px 5px;
+  text-decoration: underline;
 `
 
 
@@ -74,8 +84,8 @@ export const Sidebar = props => {
   return (
 
     <SidebarContainer>
+          <TitleTest>The Islands</TitleTest>
         <SidebarText>
-          Islands
            {details}
            
         </SidebarText>

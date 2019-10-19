@@ -21,7 +21,7 @@ export default class Collapsible extends React.Component {
 
         return (
         <div>
-            <div onClick={(e)=> this.togglePanel(e)}>{this.props.name}</div>
+                <div onClick={(e) => this.togglePanel(e)} > <i class="fas fa-caret-right"></i> {this.props.name}</div>
             {this.state.open ? (<div>{this.props.children}</div>): null}
         </div>)
 
