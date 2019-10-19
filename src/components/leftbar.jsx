@@ -78,7 +78,7 @@ export const Sidebar = props => {
   return (
 
     <SidebarContainer>
-        {/* <div>Islands</div> */}
+        <div>Islands</div>
           <Collapsible>
             {details}
             {/* <p style={{ color: "black" }}>Resort 1</p>
