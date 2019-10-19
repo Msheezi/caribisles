@@ -15,6 +15,7 @@ border-radius: 3px;
 // left: 0px;
 // right: 10px;
 padding: 5px;
+overflow-y: auto;
 
 `;
 
@@ -39,12 +40,12 @@ const Panel = styled.div`
   transition: max-height 0.2s ease-out;
 
 `
-const SidebarText = styled.span`
+const SidebarText = styled.div`
 font-family: "Lobster", cursive;
-  font-size: 18pt;
+  font-size: 14pt;
   color: white;
   letter-spacing: 3px;
-  
+  margin: 2px 5px;
   text-shadow: -1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,

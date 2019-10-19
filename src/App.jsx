@@ -32,11 +32,11 @@ function App() {
     //     </a>
     //   </header>
     <div>
-    <Navbar></Navbar>
+    <Navbar/>
 
       <MainContent>
 
-        <Sidebar></Sidebar>
+        <Sidebar/>
 
       </MainContent>
     </div>
