@@ -44,6 +44,7 @@ font-family: "Lobster", cursive;
   font-size: 18pt;
   color: white;
   letter-spacing: 3px;
+  
   text-shadow: -1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
@@ -56,37 +57,27 @@ font-family: "Lobster", cursive;
 export const Sidebar = props => {
 
   let islandsArray = Object.keys(islands).map(id=> islands[id])
-  // let islandsTitle = Object.keys
   let resortsArray = Object.keys(resorts).map(id => resorts[id])
   let details = islandsArray.map(island => (
-    <div>
-        <SidebarText key={island.id}>{island.name}</SidebarText>
+    <Collapsible 
+        name={island.name}> 
         <ul>
           {resortsArray.map(resort => (
             resort.islandId === island.id ? <li key={resort.id}>{resort.name}</li> : ""
-          ))}
+            ))}
         </ul>
-    </div>
+            </Collapsible>
+    
   ))
-
-  // let details =  resortsArray.map(resort=> (
-  //   <div> 
-  //     <h3>{}</h3>
-  //   </div>
-  // ))
-
+   
   return (
 
     <SidebarContainer>
-        <div>Islands</div>
-          <Collapsible>
-            {details}
-            {/* <p style={{ color: "black" }}>Resort 1</p>
-            <p style={{ color: "black" }}>Resort 2</p>
-               */}
-            
-          </Collapsible>
-
+        <SidebarText>
+          Islands
+           {details}
+           
+        </SidebarText>
     </SidebarContainer>
   );
 };
